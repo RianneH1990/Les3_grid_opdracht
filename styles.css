@@ -1,1 +1,72 @@
 /*Maak hier jouw CSS!*/
+.grid-container {
+    background-color: #a57982;
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+    grid-template-areas:
+            "header"
+            "main"
+            "aside-large"
+            "aside-small"
+            "aside-medium"
+            "empty"
+            "footer";
+
+}
+@media screen and (min-width: 576px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px auto auto auto 50px;
+        grid-template-areas:
+        "header aside-large aside-large"
+        "main aside-large aside-large"
+        "main aside-medium aside-small"
+        "main aside-medium aside-small"
+        "footer footer footer";
+    }
+}
+.grid-item {
+    padding: 8px;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#grid-header {
+    background-color: #120d31;
+    grid-area: header;
+}
+
+#grid-aside-large {
+    background-color: #302f4d;
+    grid-area: aside-large;
+}
+#grid-aside-medium {
+    background-color: #302f4d;
+    grid-area: aside-medium;
+}
+
+#grid-aside-small {
+    background-color: #302f4d;
+    grid-area: aside-small;
+    max-height: 100px;
+}
+
+#grid-main {
+    background-color: #b98ea7;
+    grid-area: main;
+}
+
+#grid-footer {
+    background-color: #120d31;
+    grid-area: footer;
+}
+
+#empty-div {
+   grid-area: empty;
+}
