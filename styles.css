@@ -14,8 +14,8 @@
             "aside-medium"
             "empty"
             "footer";
-
 }
+
 @media screen and (min-width: 576px) {
     .grid-container {
         grid-template-columns: 1fr 1fr 1fr;
@@ -28,6 +28,7 @@
         "footer footer footer";
     }
 }
+
 .grid-item {
     padding: 8px;
     color: white;
@@ -35,6 +36,7 @@
     align-content: center;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 #grid-header {
