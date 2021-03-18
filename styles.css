@@ -69,6 +69,6 @@
     grid-area: footer;
 }
 
-#empty-div {
+#empty {
    grid-area: empty;
 }
