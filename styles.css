@@ -4,6 +4,7 @@
     display: grid;
     row-gap: 16px;
     column-gap: 16px;
+    padding: 20px;
     grid-template-columns: 1fr;
     grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
     grid-template-areas:
@@ -30,13 +31,14 @@
 }
 
 .grid-item {
-    padding: 8px;
-    color: white;
+    padding: 6px;
+    color: #FFF;
     display: flex;
     align-content: center;
     justify-content: center;
     text-align: center;
     align-items: center;
+
 }
 
 #grid-header {
@@ -69,6 +71,6 @@
     grid-area: footer;
 }
 
-#empty-div {
+#empty {
    grid-area: empty;
 }
